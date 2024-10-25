@@ -19,12 +19,25 @@
 		3026FF3C2CCB77D9007E854D /* SurveyHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF3B2CCB77D9007E854D /* SurveyHistoryCoordinator.swift */; };
 		3026FF3F2CCB7C6E007E854D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF3E2CCB7C6E007E854D /* User.m */; };
 		3026FF422CCB7CFA007E854D /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF412CCB7CFA007E854D /* Interest.m */; };
+		3026FF472CCB8366007E854D /* UserSerializationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF462CCB8366007E854D /* UserSerializationService.m */; };
+		3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF492CCB83C4007E854D /* RealmStorageService.m */; };
+		3026FF5B2CCB845F007E854D /* nPhaseTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
 		3088FCF22CCB6E7D009E8703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */; };
 		756AFC5878255988369BA812 /* Pods_nPhaseTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE06C597FDBECF33B82AB07 /* Pods_nPhaseTestProject.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3026FF542CCB8459007E854D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30A657492CCB692B00526FCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A657502CCB692B00526FCA;
+			remoteInfo = nPhaseTestProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3026FF232CCB749B007E854D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -42,6 +55,12 @@
 		3026FF402CCB7C77007E854D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		3026FF412CCB7CFA007E854D /* Interest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
 		3026FF432CCB7D02007E854D /* Interest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interest.h; sourceTree = "<group>"; };
+		3026FF452CCB8353007E854D /* UserSerializationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSerializationService.h; sourceTree = "<group>"; };
+		3026FF462CCB8366007E854D /* UserSerializationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSerializationService.m; sourceTree = "<group>"; };
+		3026FF492CCB83C4007E854D /* RealmStorageService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmStorageService.m; sourceTree = "<group>"; };
+		3026FF4B2CCB83D1007E854D /* RealmStorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmStorageService.h; sourceTree = "<group>"; };
+		3026FF502CCB8459007E854D /* nPhaseTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nPhaseTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nPhaseTestProjectTests.swift; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3026FF4D2CCB8459007E854D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30A6574E2CCB692B00526FCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +163,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3026FF482CCB8371007E854D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3026FF452CCB8353007E854D /* UserSerializationService.h */,
+				3026FF462CCB8366007E854D /* UserSerializationService.m */,
+				3026FF492CCB83C4007E854D /* RealmStorageService.m */,
+				3026FF4B2CCB83D1007E854D /* RealmStorageService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3026FF5A2CCB845F007E854D /* nPhaseTestProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */,
+			);
+			path = nPhaseTestProjectTests;
+			sourceTree = "<group>";
+		};
 		3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +190,7 @@
 				3088FCE92CCB6E7D009E8703 /* Info.plist */,
 				3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */,
 				3026FF3D2CCB7C6E007E854D /* nPhaseTestProject-Bridging-Header.h */,
+				3026FF482CCB8371007E854D /* Service */,
 				3026FF442CCB7D09007E854D /* Model */,
 				3026FF262CCB75C1007E854D /* Coordinator */,
 				3026FF332CCB772A007E854D /* Helpers */,
@@ -160,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */,
+				3026FF5A2CCB845F007E854D /* nPhaseTestProjectTests */,
 				30A657522CCB692B00526FCA /* Products */,
 				DD5B2889509E9BCC702EF62C /* Pods */,
 				11063644F2FC04B51D3C8E49 /* Frameworks */,
@@ -170,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				30A657512CCB692B00526FCA /* nPhaseTestProject.app */,
+				3026FF502CCB8459007E854D /* nPhaseTestProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +234,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3026FF4F2CCB8459007E854D /* nPhaseTestProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3026FF562CCB8459007E854D /* Build configuration list for PBXNativeTarget "nPhaseTestProjectTests" */;
+			buildPhases = (
+				3026FF4C2CCB8459007E854D /* Sources */,
+				3026FF4D2CCB8459007E854D /* Frameworks */,
+				3026FF4E2CCB8459007E854D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3026FF552CCB8459007E854D /* PBXTargetDependency */,
+			);
+			name = nPhaseTestProjectTests;
+			packageProductDependencies = (
+			);
+			productName = nPhaseTestProjectTests;
+			productReference = 3026FF502CCB8459007E854D /* nPhaseTestProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		30A657502CCB692B00526FCA /* nPhaseTestProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A657642CCB692C00526FCA /* Build configuration list for PBXNativeTarget "nPhaseTestProject" */;
@@ -215,6 +283,10 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					3026FF4F2CCB8459007E854D = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 30A657502CCB692B00526FCA;
+					};
 					30A657502CCB692B00526FCA = {
 						CreatedOnToolsVersion = 16.0;
 						LastSwiftMigration = 1600;
@@ -235,11 +307,19 @@
 			projectRoot = "";
 			targets = (
 				30A657502CCB692B00526FCA /* nPhaseTestProject */,
+				3026FF4F2CCB8459007E854D /* nPhaseTestProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3026FF4E2CCB8459007E854D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30A6574F2CCB692B00526FCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +374,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3026FF4C2CCB8459007E854D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3026FF5B2CCB845F007E854D /* nPhaseTestProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30A6574D2CCB692B00526FCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,17 +393,27 @@
 				3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */,
 				3026FF3A2CCB77CC007E854D /* SurveyCoordinator.swift in Sources */,
 				3026FF282CCB7641007E854D /* BaseViewModel.swift in Sources */,
+				3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */,
 				3026FF302CCB76EE007E854D /* SurveyHistoryViewModel.swift in Sources */,
 				3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */,
 				3026FF242CCB749B007E854D /* Coordinator.swift in Sources */,
 				3026FF352CCB7743007E854D /* SurveyDetailsViewController.swift in Sources */,
 				3026FF2A2CCB764C007E854D /* SurveyViewController.swift in Sources */,
+				3026FF472CCB8366007E854D /* UserSerializationService.m in Sources */,
 				3026FF2E2CCB76DE007E854D /* SurveyHistoryViewController.swift in Sources */,
 				3026FF422CCB7CFA007E854D /* Interest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3026FF552CCB8459007E854D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30A657502CCB692B00526FCA /* nPhaseTestProject */;
+			targetProxy = 3026FF542CCB8459007E854D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */ = {
@@ -329,6 +427,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3026FF572CCB8459007E854D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akoryagin.nPhaseTestProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nPhaseTestProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nPhaseTestProject";
+			};
+			name = Debug;
+		};
+		3026FF582CCB8459007E854D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akoryagin.nPhaseTestProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nPhaseTestProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nPhaseTestProject";
+			};
+			name = Release;
+		};
 		30A657652CCB692C00526FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8037D916469FBEB47F0F5A6 /* Pods-nPhaseTestProject.debug.xcconfig */;
@@ -512,6 +646,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3026FF562CCB8459007E854D /* Build configuration list for PBXNativeTarget "nPhaseTestProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3026FF572CCB8459007E854D /* Debug */,
+				3026FF582CCB8459007E854D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		30A6574C2CCB692B00526FCA /* Build configuration list for PBXProject "nPhaseTestProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
