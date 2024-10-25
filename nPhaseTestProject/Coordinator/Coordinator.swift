@@ -34,6 +34,8 @@ final class MainCoordinator: Coordinator {
     }
     
     func showSurveyHistory() {
+        surveyHistoryCoordinator = SurveyHistoryCoordinator(navigationController: navigationController)
+        surveyHistoryCoordinator?.start()
     }
 }
 

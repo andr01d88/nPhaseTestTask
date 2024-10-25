@@ -15,7 +15,9 @@ final class SurveyHistoryCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let surveyHistoryViewController = SurveyHistoryViewController()
+        surveyHistoryViewController.coordinator = self
+        navigationController.pushViewController(surveyHistoryViewController, animated: true)
     }
     
     func showSurveyDetails() {

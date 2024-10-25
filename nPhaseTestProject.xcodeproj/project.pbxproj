@@ -26,6 +26,8 @@
 		3026FF622CCB95D8007E854D /* SurveyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF612CCB95D8007E854D /* SurveyHomeView.swift */; };
 		3026FF642CCB95EE007E854D /* String+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF632CCB95EE007E854D /* String+Resources.swift */; };
 		3026FF672CCB97F1007E854D /* SurveyTaskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */; };
+		3026FF692CCBA08D007E854D /* SurveyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF682CCBA08D007E854D /* SurveyHistoryView.swift */; };
+		3026FF6B2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF6A2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		3026FF612CCB95D8007E854D /* SurveyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHomeView.swift; sourceTree = "<group>"; };
 		3026FF632CCB95EE007E854D /* String+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Resources.swift"; sourceTree = "<group>"; };
 		3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTaskProvider.swift; sourceTree = "<group>"; };
+		3026FF682CCBA08D007E854D /* SurveyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHistoryView.swift; sourceTree = "<group>"; };
+		3026FF6A2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			children = (
 				3026FF2D2CCB76DE007E854D /* SurveyHistoryViewController.swift */,
 				3026FF2F2CCB76EE007E854D /* SurveyHistoryViewModel.swift */,
+				3026FF682CCBA08D007E854D /* SurveyHistoryView.swift */,
 			);
 			path = SurveyHistory;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3026FF272CCB7641007E854D /* BaseViewModel.swift */,
+				3026FF6A2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				3026FF3A2CCB77CC007E854D /* SurveyCoordinator.swift in Sources */,
 				3026FF282CCB7641007E854D /* BaseViewModel.swift in Sources */,
 				3026FF672CCB97F1007E854D /* SurveyTaskProvider.swift in Sources */,
+				3026FF692CCBA08D007E854D /* SurveyHistoryView.swift in Sources */,
 				3026FF642CCB95EE007E854D /* String+Resources.swift in Sources */,
 				3026FF622CCB95D8007E854D /* SurveyHomeView.swift in Sources */,
 				3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */,
@@ -424,6 +431,7 @@
 				3026FF242CCB749B007E854D /* Coordinator.swift in Sources */,
 				3026FF5E2CCB8FB4007E854D /* UserJSONRealm.m in Sources */,
 				3026FF352CCB7743007E854D /* SurveyDetailsViewController.swift in Sources */,
+				3026FF6B2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift in Sources */,
 				3026FF2A2CCB764C007E854D /* SurveyViewController.swift in Sources */,
 				3026FF472CCB8366007E854D /* UserSerializationService.m in Sources */,
 				3026FF2E2CCB76DE007E854D /* SurveyHistoryViewController.swift in Sources */,

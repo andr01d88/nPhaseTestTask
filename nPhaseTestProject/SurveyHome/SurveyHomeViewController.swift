@@ -10,27 +10,23 @@ import UIKit
 final class SurveyHomeViewController: UIViewController {
 
     var coordinator: MainCoordinator?
+
+    private let homeView = SurveyHomeView()
     
     // MARK: - Lifecycle
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addRootView()
+    override func loadView() {
+        view = homeView
     }
     
-    private func addRootView() {
-        let surveyHomeView = SurveyHomeView()
-        view.addSubview(surveyHomeView)
-        surveyHomeView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            surveyHomeView.topAnchor.constraint(equalTo: view.topAnchor),
-            surveyHomeView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            surveyHomeView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            surveyHomeView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
-        surveyHomeView.startSurveyButton.addTarget(self, action: #selector(startSurveyTapped), for: .touchUpInside)
-        surveyHomeView.showHistoryButton.addTarget(self, action: #selector(showHistoryTapped), for: .touchUpInside)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+    
+    private func setupView() {
+        homeView.startSurveyButton.addTarget(self, action: #selector(startSurveyTapped), for: .touchUpInside)
+        homeView.showHistoryButton.addTarget(self, action: #selector(showHistoryTapped), for: .touchUpInside)
     }
     
     // MARK: - Actions

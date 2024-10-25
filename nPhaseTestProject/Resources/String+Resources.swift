@@ -19,9 +19,15 @@ struct Strings {
         static let showHistoryTitle = NSLocalizedString("Show Survey History", comment: "")
     }
     
+    struct SurveyHistory {
+        static let title = NSLocalizedString("Survey History", comment: "")
+    }
+    
     struct ServiceErrors {
         static let serializationError = NSLocalizedString("Failed to serialize user.", comment: "")
         static let storageSavingError = NSLocalizedString("Failed to store user.", comment: "")
+        static let deserializationError = NSLocalizedString("Failed to deserialize user.", comment: "")
+        static let storageFetchingError = NSLocalizedString("Failed to fetch user.", comment: "")
     }
     
     struct SurveyTask {
