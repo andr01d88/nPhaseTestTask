@@ -72,5 +72,7 @@ class SurveyHistoryViewController: UIViewController, UITableViewDataSource, UITa
     // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let user = viewModel.survey(at: indexPath.row) else { return }
+        coordinator?.showSurveyDetails(for: user)
     }
 }

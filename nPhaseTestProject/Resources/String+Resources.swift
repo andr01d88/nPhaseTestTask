@@ -23,6 +23,15 @@ struct Strings {
         static let title = NSLocalizedString("Survey History", comment: "")
     }
     
+    struct SurveyHistoryDetails {
+        static let title = NSLocalizedString("Survey Details", comment: "")
+        static let basicTitle = NSLocalizedString("Basic info", comment: "")
+        static let interestsTitle = NSLocalizedString("Interests", comment: "")
+        static let nameLabel = NSLocalizedString("Name", comment: "")
+        static let ageLabel = NSLocalizedString("Age", comment: "")
+        static let emailLabel = NSLocalizedString("Email", comment: "")
+    }
+    
     struct ServiceErrors {
         static let serializationError = NSLocalizedString("Failed to serialize user.", comment: "")
         static let storageSavingError = NSLocalizedString("Failed to store user.", comment: "")

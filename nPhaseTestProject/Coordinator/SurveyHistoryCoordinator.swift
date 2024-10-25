@@ -20,6 +20,9 @@ final class SurveyHistoryCoordinator: Coordinator {
         navigationController.pushViewController(surveyHistoryViewController, animated: true)
     }
     
-    func showSurveyDetails() {
+    func showSurveyDetails(for user: User) {
+        let surveyDetailsViewModel = SurveyDetailsViewModel(user: user)
+        let surveyDetailsViewController = SurveyDetailsViewController(viewModel: surveyDetailsViewModel)
+        navigationController.pushViewController(surveyDetailsViewController, animated: true)
     }
 }
