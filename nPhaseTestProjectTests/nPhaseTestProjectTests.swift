@@ -6,30 +6,63 @@
 //
 
 import XCTest
+@testable import nPhaseTestProject
 
 final class nPhaseTestProjectTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    let userJSON = """
+{
+  "age" : 30,
+  "email" : "john.doe@example.com",
+  "interests" : [
+    {
+      "interest_name" : "Music"
+    },
+    {
+      "interest_name" : "Sports"
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+  ],
+  "name" : "John Doe"
+}
+"""
+    func testUserSerialization() throws {
+        let interests = [Interest(interestName: "Music"), Interest(interestName: "Sports")]
+        let user = User(name: "John Doe", email: "john.doe@example.com", age: 30, interests: interests)
+        let expectation = self.expectation(description: "SerializeUser")
+        let userSerializationService = UserSerializationService()
+        
+        userSerializationService.serializeUser(user) { jsonString, error in
+            XCTAssertNil(error, "Error should be nil")
+            XCTAssertNotNil(jsonString, "jsonString should not be nil")
+            
+            let expectedJSONString = self.userJSON
+            XCTAssertEqual(jsonString, expectedJSONString, "The JSON string should match the expected JSON string")
+            
+            expectation.fulfill()
         }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testUserDeserialization() throws {
+        let expectation = self.expectation(description: "DeserializeUser")
+        let userSerializationService = UserSerializationService()
+        
+        userSerializationService.deserializeUser(fromJSON: userJSON) { user, error in
+            XCTAssertNil(error, "Error should be nil")
+            XCTAssertNotNil(user, "User should not be nil")
+            
+            XCTAssertEqual(user?.name, "John Doe", "The user's name should be 'John Doe'")
+            XCTAssertEqual(user?.age, 30, "The user's age should be 30")
+            XCTAssertEqual(user?.email, "john.doe@example.com", "The user's email should be 'john.doe@example.com'")
+            XCTAssertEqual(user?.interests.count, 2, "The user should have 2 interests")
+            XCTAssertEqual(user?.interests[0].interestName, "Music", "The first interest should be 'Music'")
+            XCTAssertEqual(user?.interests[1].interestName, "Sports", "The second interest should be 'Sports'")
+            
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
 }

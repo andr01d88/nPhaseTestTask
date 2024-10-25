@@ -3,4 +3,5 @@
 //
 
 #import "User.h"
-#import "Interest.h" 
+#import "Interest.h"
+#import "UserSerializationService.h"
