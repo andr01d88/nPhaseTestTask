@@ -15,5 +15,8 @@ final class SurveyCoordinator: Coordinator {
     }
     
     func start() {
+        let surveyViewController = SurveyViewController()
+        surveyViewController.coordinator = self
+        navigationController.pushViewController(surveyViewController, animated: true)
     }
 }
