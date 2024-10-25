@@ -3,50 +3,68 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
+		3088FCEF2CCB6E7D009E8703 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* ViewController.swift */; };
+		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
+		3088FCF22CCB6E7D009E8703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */; };
+		756AFC5878255988369BA812 /* Pods_nPhaseTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE06C597FDBECF33B82AB07 /* Pods_nPhaseTestProject.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3088FCEA2CCB6E7D009E8703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3088FCEC2CCB6E7D009E8703 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		308C968A7D309699E0EE760C /* Pods-nPhaseTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPhaseTestProject.release.xcconfig"; path = "Target Support Files/Pods-nPhaseTestProject/Pods-nPhaseTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		30A657512CCB692B00526FCA /* nPhaseTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nPhaseTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE06C597FDBECF33B82AB07 /* Pods_nPhaseTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nPhaseTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8037D916469FBEB47F0F5A6 /* Pods-nPhaseTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nPhaseTestProject.debug.xcconfig"; path = "Target Support Files/Pods-nPhaseTestProject/Pods-nPhaseTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		30A657632CCB692C00526FCA /* Exceptions for "nPhaseTestProject" folder in "nPhaseTestProject" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 30A657502CCB692B00526FCA /* nPhaseTestProject */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		30A657532CCB692B00526FCA /* nPhaseTestProject */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				30A657632CCB692C00526FCA /* Exceptions for "nPhaseTestProject" folder in "nPhaseTestProject" target */,
-			);
-			path = nPhaseTestProject;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30A6574E2CCB692B00526FCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756AFC5878255988369BA812 /* Pods_nPhaseTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11063644F2FC04B51D3C8E49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE06C597FDBECF33B82AB07 /* Pods_nPhaseTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */ = {
+			isa = PBXGroup;
+			children = (
+				3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */,
+				3088FCE82CCB6E7D009E8703 /* Assets.xcassets */,
+				3088FCE92CCB6E7D009E8703 /* Info.plist */,
+				3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */,
+				3088FCEC2CCB6E7D009E8703 /* ViewController.swift */,
+			);
+			path = nPhaseTestProject;
+			sourceTree = "<group>";
+		};
 		30A657482CCB692B00526FCA = {
 			isa = PBXGroup;
 			children = (
-				30A657532CCB692B00526FCA /* nPhaseTestProject */,
+				3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */,
 				30A657522CCB692B00526FCA /* Products */,
+				DD5B2889509E9BCC702EF62C /* Pods */,
+				11063644F2FC04B51D3C8E49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DD5B2889509E9BCC702EF62C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8037D916469FBEB47F0F5A6 /* Pods-nPhaseTestProject.debug.xcconfig */,
+				308C968A7D309699E0EE760C /* Pods-nPhaseTestProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,20 +92,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30A657642CCB692C00526FCA /* Build configuration list for PBXNativeTarget "nPhaseTestProject" */;
 			buildPhases = (
+				CF193A1F0A355ED639510F1D /* [CP] Check Pods Manifest.lock */,
 				30A6574D2CCB692B00526FCA /* Sources */,
 				30A6574E2CCB692B00526FCA /* Frameworks */,
 				30A6574F2CCB692B00526FCA /* Resources */,
+				10BC4AAB7754E56F9846A455 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				30A657532CCB692B00526FCA /* nPhaseTestProject */,
-			);
 			name = nPhaseTestProject;
-			packageProductDependencies = (
-			);
 			productName = nPhaseTestProject;
 			productReference = 30A657512CCB692B00526FCA /* nPhaseTestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +123,7 @@
 				};
 			};
 			buildConfigurationList = 30A6574C2CCB692B00526FCA /* Build configuration list for PBXProject "nPhaseTestProject" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +131,6 @@
 				Base,
 			);
 			mainGroup = 30A657482CCB692B00526FCA;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 30A657522CCB692B00526FCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +145,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */,
+				3088FCF22CCB6E7D009E8703 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10BC4AAB7754E56F9846A455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nPhaseTestProject/Pods-nPhaseTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nPhaseTestProject/Pods-nPhaseTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nPhaseTestProject/Pods-nPhaseTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF193A1F0A355ED639510F1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nPhaseTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30A6574D2CCB692B00526FCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */,
+				3088FCEF2CCB6E7D009E8703 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3088FCEA2CCB6E7D009E8703 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		30A657652CCB692C00526FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8037D916469FBEB47F0F5A6 /* Pods-nPhaseTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -149,9 +230,9 @@
 				INFOPLIST_FILE = nPhaseTestProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -167,6 +248,7 @@
 		};
 		30A657662CCB692C00526FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308C968A7D309699E0EE760C /* Pods-nPhaseTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -176,9 +258,9 @@
 				INFOPLIST_FILE = nPhaseTestProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -229,7 +311,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -292,7 +374,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
