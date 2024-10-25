@@ -17,6 +17,8 @@
 		3026FF372CCB7757007E854D /* SurveyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF362CCB7757007E854D /* SurveyDetailsViewModel.swift */; };
 		3026FF3A2CCB77CC007E854D /* SurveyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF392CCB77CC007E854D /* SurveyCoordinator.swift */; };
 		3026FF3C2CCB77D9007E854D /* SurveyHistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF3B2CCB77D9007E854D /* SurveyHistoryCoordinator.swift */; };
+		3026FF3F2CCB7C6E007E854D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF3E2CCB7C6E007E854D /* User.m */; };
+		3026FF422CCB7CFA007E854D /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF412CCB7CFA007E854D /* Interest.m */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
@@ -35,6 +37,11 @@
 		3026FF362CCB7757007E854D /* SurveyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailsViewModel.swift; sourceTree = "<group>"; };
 		3026FF392CCB77CC007E854D /* SurveyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCoordinator.swift; sourceTree = "<group>"; };
 		3026FF3B2CCB77D9007E854D /* SurveyHistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHistoryCoordinator.swift; sourceTree = "<group>"; };
+		3026FF3D2CCB7C6E007E854D /* nPhaseTestProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nPhaseTestProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		3026FF3E2CCB7C6E007E854D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		3026FF402CCB7C77007E854D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		3026FF412CCB7CFA007E854D /* Interest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
+		3026FF432CCB7D02007E854D /* Interest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interest.h; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +126,17 @@
 			path = SurveyDetails;
 			sourceTree = "<group>";
 		};
+		3026FF442CCB7D09007E854D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3026FF3E2CCB7C6E007E854D /* User.m */,
+				3026FF402CCB7C77007E854D /* User.h */,
+				3026FF412CCB7CFA007E854D /* Interest.m */,
+				3026FF432CCB7D02007E854D /* Interest.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +144,8 @@
 				3088FCE82CCB6E7D009E8703 /* Assets.xcassets */,
 				3088FCE92CCB6E7D009E8703 /* Info.plist */,
 				3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */,
+				3026FF3D2CCB7C6E007E854D /* nPhaseTestProject-Bridging-Header.h */,
+				3026FF442CCB7D09007E854D /* Model */,
 				3026FF262CCB75C1007E854D /* Coordinator */,
 				3026FF332CCB772A007E854D /* Helpers */,
 				3026FF322CCB7703007E854D /* Survey */,
@@ -197,6 +217,7 @@
 				TargetAttributes = {
 					30A657502CCB692B00526FCA = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -277,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3026FF3F2CCB7C6E007E854D /* User.m in Sources */,
 				3026FF2C2CCB7655007E854D /* SurveyViewModel.swift in Sources */,
 				3026FF3C2CCB77D9007E854D /* SurveyHistoryCoordinator.swift in Sources */,
 				3026FF372CCB7757007E854D /* SurveyDetailsViewModel.swift in Sources */,
@@ -289,6 +311,7 @@
 				3026FF352CCB7743007E854D /* SurveyDetailsViewController.swift in Sources */,
 				3026FF2A2CCB764C007E854D /* SurveyViewController.swift in Sources */,
 				3026FF2E2CCB76DE007E854D /* SurveyHistoryViewController.swift in Sources */,
+				3026FF422CCB7CFA007E854D /* Interest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -329,6 +353,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.akoryagin.nPhaseTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nPhaseTestProject/nPhaseTestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -357,6 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.akoryagin.nPhaseTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "nPhaseTestProject/nPhaseTestProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
