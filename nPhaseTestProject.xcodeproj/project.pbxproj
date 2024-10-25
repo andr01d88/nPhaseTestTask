@@ -28,6 +28,7 @@
 		3026FF672CCB97F1007E854D /* SurveyTaskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */; };
 		3026FF692CCBA08D007E854D /* SurveyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF682CCBA08D007E854D /* SurveyHistoryView.swift */; };
 		3026FF6B2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF6A2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift */; };
+		3026FF6D2CCBA64A007E854D /* SurveyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF6C2CCBA64A007E854D /* SurveyDetailsView.swift */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTaskProvider.swift; sourceTree = "<group>"; };
 		3026FF682CCBA08D007E854D /* SurveyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHistoryView.swift; sourceTree = "<group>"; };
 		3026FF6A2CCBA0D6007E854D /* UITableViewCell+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		3026FF6C2CCBA64A007E854D /* SurveyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailsView.swift; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				3026FF342CCB7743007E854D /* SurveyDetailsViewController.swift */,
 				3026FF362CCB7757007E854D /* SurveyDetailsViewModel.swift */,
+				3026FF6C2CCBA64A007E854D /* SurveyDetailsView.swift */,
 			);
 			path = SurveyDetails;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				3026FF3F2CCB7C6E007E854D /* User.m in Sources */,
 				3026FF2C2CCB7655007E854D /* SurveyViewModel.swift in Sources */,
 				3026FF3C2CCB77D9007E854D /* SurveyHistoryCoordinator.swift in Sources */,
+				3026FF6D2CCBA64A007E854D /* SurveyDetailsView.swift in Sources */,
 				3026FF372CCB7757007E854D /* SurveyDetailsViewModel.swift in Sources */,
 				3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */,
 				3026FF3A2CCB77CC007E854D /* SurveyCoordinator.swift in Sources */,
