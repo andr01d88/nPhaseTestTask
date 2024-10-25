@@ -36,6 +36,8 @@ struct Strings {
         static let invalidEmailMessage = NSLocalizedString("Invalid email address", comment: "")
         static let yourInterestsTitle = NSLocalizedString("Your Interests", comment: "")
         static let yourInterestsQuestion = NSLocalizedString("What are your interests?", comment: "")
+        static let completionTitle = NSLocalizedString("Thank you!", comment: "")
+        static let completionMessage = NSLocalizedString("Thanks for your answers. Resluts will be saved and can be viewed later.", comment: "")
         static let music = NSLocalizedString("Music", comment: "")
         static let sports = NSLocalizedString("Sports", comment: "")
         static let travel = NSLocalizedString("Travel", comment: "")

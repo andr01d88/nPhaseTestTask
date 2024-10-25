@@ -17,6 +17,7 @@ enum SurveyTaskSteps: String {
     case ageStep
     case emailStep
     case interestsStep
+    case completion
 }
 
 final class SurveyTaskProvider: SurveyTaskProviderable {
@@ -62,6 +63,12 @@ final class SurveyTaskProvider: SurveyTaskProviderable {
         let interestQuestionStep = ORKQuestionStep(identifier: SurveyTaskSteps.interestsStep.rawValue, title: Strings.SurveyTask.yourInterestsTitle, question: Strings.SurveyTask.yourInterestsQuestion, answer: interestAnswerFormat)
         interestQuestionStep.isOptional = false
         steps.append(interestQuestionStep)
+        
+        //Completion step
+        let completionStep = ORKCompletionStep(identifier: SurveyTaskSteps.completion.rawValue)
+        completionStep.title = Strings.SurveyTask.completionTitle
+        completionStep.text = Strings.SurveyTask.completionMessage
+        steps.append(completionStep)
         
         return ORKOrderedTask(identifier: "surveyTask", steps: steps)
     }

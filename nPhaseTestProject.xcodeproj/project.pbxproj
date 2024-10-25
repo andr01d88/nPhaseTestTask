@@ -23,6 +23,9 @@
 		3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF492CCB83C4007E854D /* RealmStorageService.m */; };
 		3026FF5B2CCB845F007E854D /* nPhaseTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */; };
 		3026FF5E2CCB8FB4007E854D /* UserJSONRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF5D2CCB8FB3007E854D /* UserJSONRealm.m */; };
+		3026FF622CCB95D8007E854D /* SurveyHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF612CCB95D8007E854D /* SurveyHomeView.swift */; };
+		3026FF642CCB95EE007E854D /* String+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF632CCB95EE007E854D /* String+Resources.swift */; };
+		3026FF672CCB97F1007E854D /* SurveyTaskProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nPhaseTestProjectTests.swift; sourceTree = "<group>"; };
 		3026FF5C2CCB8FA6007E854D /* UserJSONRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserJSONRealm.h; sourceTree = "<group>"; };
 		3026FF5D2CCB8FB3007E854D /* UserJSONRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserJSONRealm.m; sourceTree = "<group>"; };
+		3026FF612CCB95D8007E854D /* SurveyHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyHomeView.swift; sourceTree = "<group>"; };
+		3026FF632CCB95EE007E854D /* String+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Resources.swift"; sourceTree = "<group>"; };
+		3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTaskProvider.swift; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */,
+				3026FF612CCB95D8007E854D /* SurveyHomeView.swift */,
 			);
 			path = SurveyHome;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3026FF292CCB764C007E854D /* SurveyViewController.swift */,
+				3026FF662CCB97F1007E854D /* SurveyTaskProvider.swift */,
 				3026FF2B2CCB7655007E854D /* SurveyViewModel.swift */,
 			);
 			path = Survey;
@@ -187,6 +195,14 @@
 			path = nPhaseTestProjectTests;
 			sourceTree = "<group>";
 		};
+		3026FF652CCB95F3007E854D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3026FF632CCB95EE007E854D /* String+Resources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3088FCED2CCB6E7D009E8703 /* nPhaseTestProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +211,7 @@
 				3088FCE92CCB6E7D009E8703 /* Info.plist */,
 				3088FCEB2CCB6E7D009E8703 /* LaunchScreen.storyboard */,
 				3026FF3D2CCB7C6E007E854D /* nPhaseTestProject-Bridging-Header.h */,
+				3026FF652CCB95F3007E854D /* Resources */,
 				3026FF482CCB8371007E854D /* Service */,
 				3026FF442CCB7D09007E854D /* Model */,
 				3026FF262CCB75C1007E854D /* Coordinator */,
@@ -398,6 +415,9 @@
 				3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */,
 				3026FF3A2CCB77CC007E854D /* SurveyCoordinator.swift in Sources */,
 				3026FF282CCB7641007E854D /* BaseViewModel.swift in Sources */,
+				3026FF672CCB97F1007E854D /* SurveyTaskProvider.swift in Sources */,
+				3026FF642CCB95EE007E854D /* String+Resources.swift in Sources */,
+				3026FF622CCB95D8007E854D /* SurveyHomeView.swift in Sources */,
 				3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */,
 				3026FF302CCB76EE007E854D /* SurveyHistoryViewModel.swift in Sources */,
 				3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */,
