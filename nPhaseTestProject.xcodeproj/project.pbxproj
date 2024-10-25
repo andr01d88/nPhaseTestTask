@@ -22,6 +22,7 @@
 		3026FF472CCB8366007E854D /* UserSerializationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF462CCB8366007E854D /* UserSerializationService.m */; };
 		3026FF4A2CCB83C4007E854D /* RealmStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF492CCB83C4007E854D /* RealmStorageService.m */; };
 		3026FF5B2CCB845F007E854D /* nPhaseTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */; };
+		3026FF5E2CCB8FB4007E854D /* UserJSONRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3026FF5D2CCB8FB3007E854D /* UserJSONRealm.m */; };
 		3088FCEE2CCB6E7D009E8703 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */; };
 		3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088FCEC2CCB6E7D009E8703 /* SurveyHomeViewController.swift */; };
 		3088FCF02CCB6E7D009E8703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3088FCE82CCB6E7D009E8703 /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		3026FF4B2CCB83D1007E854D /* RealmStorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmStorageService.h; sourceTree = "<group>"; };
 		3026FF502CCB8459007E854D /* nPhaseTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nPhaseTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3026FF592CCB845F007E854D /* nPhaseTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nPhaseTestProjectTests.swift; sourceTree = "<group>"; };
+		3026FF5C2CCB8FA6007E854D /* UserJSONRealm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserJSONRealm.h; sourceTree = "<group>"; };
+		3026FF5D2CCB8FB3007E854D /* UserJSONRealm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserJSONRealm.m; sourceTree = "<group>"; };
 		3088FCE72CCB6E7D009E8703 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3088FCE82CCB6E7D009E8703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3088FCE92CCB6E7D009E8703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				3026FF402CCB7C77007E854D /* User.h */,
 				3026FF412CCB7CFA007E854D /* Interest.m */,
 				3026FF432CCB7D02007E854D /* Interest.h */,
+				3026FF5C2CCB8FA6007E854D /* UserJSONRealm.h */,
+				3026FF5D2CCB8FB3007E854D /* UserJSONRealm.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				3026FF302CCB76EE007E854D /* SurveyHistoryViewModel.swift in Sources */,
 				3088FCEF2CCB6E7D009E8703 /* SurveyHomeViewController.swift in Sources */,
 				3026FF242CCB749B007E854D /* Coordinator.swift in Sources */,
+				3026FF5E2CCB8FB4007E854D /* UserJSONRealm.m in Sources */,
 				3026FF352CCB7743007E854D /* SurveyDetailsViewController.swift in Sources */,
 				3026FF2A2CCB764C007E854D /* SurveyViewController.swift in Sources */,
 				3026FF472CCB8366007E854D /* UserSerializationService.m in Sources */,

@@ -5,3 +5,4 @@
 #import "User.h"
 #import "Interest.h"
 #import "UserSerializationService.h"
+#import "RealmStorageService.h"

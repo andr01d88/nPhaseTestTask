@@ -10,6 +10,8 @@ import XCTest
 
 final class nPhaseTestProjectTests: XCTestCase {
     
+    // MARK: - Setup
+    
     let userJSON = """
 {
   "age" : 30,
@@ -25,6 +27,9 @@ final class nPhaseTestProjectTests: XCTestCase {
   "name" : "John Doe"
 }
 """
+    
+    // MARK: - User Serialization Service
+    
     func testUserSerialization() throws {
         let interests = [Interest(interestName: "Music"), Interest(interestName: "Sports")]
         let user = User(name: "John Doe", email: "john.doe@example.com", age: 30, interests: interests)
@@ -60,6 +65,39 @@ final class nPhaseTestProjectTests: XCTestCase {
             XCTAssertEqual(user?.interests[1].interestName, "Sports", "The second interest should be 'Sports'")
             
             expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    // MARK: - Realm Storage Service
+    
+    func testSaveUserJSON() throws {
+        let expectation = self.expectation(description: "SaveUserJSON")
+        let realmStorageService = RealmStorageService()
+        
+        realmStorageService.saveUserJSON(userJSON) { error in
+            XCTAssertNil(error, "Error should be nil")
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testFetchAllUserJSONs() throws {
+        let expectation = self.expectation(description: "FetchAllUserJSONs")
+        let realmStorageService = RealmStorageService()
+        
+        realmStorageService.saveUserJSON(userJSON) { error in
+            XCTAssertNil(error, "Error should be nil")
+            
+            realmStorageService.fetchAllUserJSONs { userJSONs, error in
+                XCTAssertNil(error, "Error should be nil")
+                XCTAssertNotNil(userJSONs, "userJSONs should not be nil")
+                XCTAssertEqual(userJSONs?.count, 1, "There should be one user JSON")
+                XCTAssertEqual(userJSONs?.first, self.userJSON, "The user JSON should match the saved JSON")
+                expectation.fulfill()
+            }
         }
         
         waitForExpectations(timeout: 5, handler: nil)
