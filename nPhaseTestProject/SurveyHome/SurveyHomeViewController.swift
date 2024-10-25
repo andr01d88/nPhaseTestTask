@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SurveyHomeViewController.swift
 //  nPhaseTestProject
 //
 //  Created by Andrew Koryagin on 25.10.24.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class SurveyHomeViewController: UIViewController {
 
+    var coordinator: MainCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
